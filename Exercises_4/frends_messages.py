@@ -5,10 +5,10 @@ def message_by_friend_name(friend_name):
     return f"Hello {friend_name}"
 
 
-friends = ['Ilia', 'Alena', 'Victor', 'Maria', 'Anton', 'Alex', 'Evgenii', 'Veronika']
+guests = ['Ilia', 'Alena', 'Victor', 'Maria', 'Anton', 'Alex', 'Evgenii', 'Veronika']
 
-list_length = len(friends)
-pool = cycle(friends)
+list_length = len(guests)
+pool = cycle(guests)
 
 for item in pool:
     list_length -= 1
