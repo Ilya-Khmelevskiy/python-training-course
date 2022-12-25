@@ -1,5 +1,8 @@
 from restaurant import Restaurant
+from ice_cream_stand import IceCreamStand
 from user import User
+from admin import Admin
+from electric_car import ElectricCar
 
 positive_user_data = {'login': 'tanderson', 'password': 'tanderson123', 'first_name': 'Thomas', 'last_name': 'Anderson',
                       'id': '123', 'address': '1234', 'city': 'Krakow', 'company_name': 'DA',
@@ -22,13 +25,18 @@ restaurant_3 = Restaurant('Fred', 'American food')
 # restaurant_2.open_restaurant()
 # restaurant_3.open_restaurant()
 
-user_1 = User(positive_user_data['login'], positive_user_data['password'], positive_user_data['first_name'],
-              positive_user_data['last_name'])
-user_2 = User(negative_user_data['login'], negative_user_data['password'], negative_user_data['first_name'],
-              negative_user_data['last_name'])
+# ice_cream_restaurant = IceCreamStand('Lody')
+#
+# ice_cream_restaurant.print_flavors()
 
-user_1.describe_user()
-user_1.greer_user()
+# admin_user = Admin(
+#     positive_user_data['login'], positive_user_data['password'], positive_user_data['first_name'],
+#     positive_user_data['last_name']
+# )
+#
+# admin_user.privileges.show_privileges()
 
-user_2.describe_user()
-user_2.greer_user()
+electric_car = ElectricCar('Tesla', 'Model S', '2019')
+electric_car.battery.get_range()
+electric_car.battery.update_battery()
+electric_car.battery.get_range()
